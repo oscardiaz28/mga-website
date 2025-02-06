@@ -84,7 +84,7 @@ export default function Home() {
           <div 
           data-aos="fade-up"
           className="w-full h-full overflow-hidden rounded-md">
-            <img src="/img/us.jpg" alt="" className="w-full h-[200px] md:h-[300px] object-bottom lg:h-full object-cover lg:object-left" />
+            <Image src="/img/us.jpg" alt="" className="w-full h-[200px] md:h-[300px] object-bottom lg:h-full object-cover lg:object-left" />
           </div>
 
           <div className="lg:flex lg:flex-col lg:gap-6">
@@ -130,7 +130,7 @@ export default function Home() {
               data-aos-delay="200"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">
@@ -150,7 +150,7 @@ export default function Home() {
               data-aos-delay="300"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">
@@ -170,7 +170,7 @@ export default function Home() {
               data-aos-delay="400"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">

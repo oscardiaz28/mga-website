@@ -4,10 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebook, FaFacebookF, FaTwitter } from "react-icons/fa";
+import {  FaFacebookF, FaTwitter } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import { IoCallSharp } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import Image from "next/image";
 
 const NavLink = ( {href, children} : {href: string, children: React.ReactNode} ) => {
     const pathName = usePathname();
@@ -69,7 +70,7 @@ export default function Navbar() {
             <div className="bar">
                 <div className="max-w-screen-xl mx-auto px-6 py-8 flex flex-col sm:flex-row flex-wrap justify-between gap-4 md:flex-row md:items-center md:justify-between md:p-5">
                     <div className="">
-                        <img src="/img/logo.png" alt="" className="block w-full max-w-32 lg:max-w-36" />
+                        <Image src="/img/logo.png" alt="" className="block w-full max-w-32 lg:max-w-36" />
                     </div>
 
                     <div className="flex gap-4">

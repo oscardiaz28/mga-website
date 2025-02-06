@@ -9,3 +9,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.card-content{
+    background-color: rgba(52, 63, 90, 0.65);
+    backdrop-filter: blur(10px);
+}

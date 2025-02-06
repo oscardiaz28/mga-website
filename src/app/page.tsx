@@ -1,101 +1,114 @@
 import Image from "next/image";
+import Link from "next/link";
+import { BiSolidSelectMultiple } from "react-icons/bi";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div>
+      {/* Hero */}
+      <div className="h-[600px] relative parallax flex items-center justify-start w-full lg:-mt-[36px]"
+      >
+
+        <div className="w-full max-w-screen-xl mx-auto px-5">
+
+          <div 
+          data-aos="fade-up" data-aos-duration="500"
+          className="relative z-10 lg:px-0 text-white md:max-w-md flex flex-col gap-7">
+            <h2 className="uppercase font-bold text-4xl">consultora mga ingenieros asociados</h2>
+            <p className="text-gray-50 text-[17px]/7 text">Somos una empresa que brinda servicios sobre la elaboración de proyectos e instalaciones eléctricas.</p>
+            <div className="flex items-center gap-2">
+              <Link href="" className="block bg-secondary text-center p-1 px-8 rounded-md">Servicios</Link>
+              <Link href="" className="block bg-white text-black text-center p-1 px-8 rounded-md">Solicitar</Link>
+            </div>
+          </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      </div>
+
+      {/* Services HomePage */}
+      <div 
+      data-aos="fade-in"
+      className="max-w-screen-xl mx-auto px-5 pb-20 lg:flex lg:flex-row lg:-mt-12 relative z-index-20">
+
+        <div className="bg-primary text-white flex items-start justify-center gap-6 p-8 py-8 pb-10 lg:pb-12 flex-col sm:flex-row lg:px-8">
+          <div className="bg-tertiary w-14 h-14 flex-shrink-0 rounded-full grid place-items-center">
+            <BiSolidSelectMultiple className="text-2xl" />
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h4 className="font-bold text-2xl">Lorem Ipsum</h4>
+            <p className="w-full text-[16px]/6 text-gray-200">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          </div>
+        </div>
+
+        <div className="bg-[#FC5E28] text-white flex items-start justify-center gap-6 p-8 py-8 pb-10 lg:pb-12 flex-col sm:flex-row lg:px-8">
+          <div className="bg-primary w-14 h-14 flex-shrink-0 rounded-full grid place-items-center">
+            <BiSolidSelectMultiple className="text-2xl" />
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h4 className="font-bold text-2xl">Lorem Ipsum</h4>
+            <p className="w-full text-[16px]/6 text-gray-200">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          </div>
+        </div>
+
+        <div className="bg-primary text-white flex items-start justify-center gap-6 p-8 py-8 pb-10 lg:pb-12 flex-col sm:flex-row lg:px-8">
+          <div className="bg-tertiary w-14 h-14 flex-shrink-0 rounded-full grid place-items-center">
+            <BiSolidSelectMultiple className="text-2xl" />
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h4 className="font-bold text-2xl">Lorem Ipsum</h4>
+            <p className="w-full text-[16px]/6 text-gray-200">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Us */}
+      <div className="max-w-screen-xl px-5 mx-auto py-20">
+
+        <p className="text-black font-bold text-3xl text-center mb-20"><span className="text-secondary">/ </span>Acerca de Nosotros</p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-[600px] gap-16 lg:items-center">
+
+          <div className="w-full h-full overflow-hidden rounded-md">
+            <img src="/img/us.jpg" alt="" className="w-full h-[200px] md:h-[300px] object-bottom lg:h-full object-cover lg:object-left" />
+          </div>
+
+          <div className="lg:flex lg:flex-col lg:gap-6">
+            <div className="flex flex-col gap-4">
+              <p className="text-secondary font-bold text-xl">MGA Asociados</p>
+              <p className="text-2xl text-black font-bold">Creamos y convertimos en realidad</p>
+              <p className="text-gray-800 text-[16px]/8">Implementación de sistemas eléctricos con altos estándares de seguridad y calidad para garantizar un funcionamiento óptimo.</p>
+            </div>
+
+            <div className="mt-14 flex flex-col gap-5">
+              <div className="bg-white border-2 border-gray-100 rounded-full grid grid-cols-2 p-1">
+                <button className="bg-tertiary text-white text-sm p-3 rounded-full">Nuestra misión</button>
+                <button className="text-sm p-3 rounded-full">Nuestra visión</button>
+              </div>
+
+              <p className="p-6 bg-gray-50 rounded-md text-[16px]/7"> Ofrecer soluciones integrales en obras eléctricas que superen las expectativas de nuestros clientes, garantizando seguridad, eficiencia y sostenibilidad en cada proyecto.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      {/* Projects */}
+      <div className="bg-primary py-20 text-white">
+        <div className="max-w-screen-xl mx-auto px-5">
+          <p className="text-white font-bold text-3xl text-left mb-20"><span className="text-secondary">/ </span>Ultimos Proyectos</p>
+        </div>  
+      </div>  
+
     </div>
   );
 }

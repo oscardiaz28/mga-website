@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { BiSolidSelectMultiple } from "react-icons/bi";
 import { LuMapPin } from "react-icons/lu";
@@ -15,7 +14,7 @@ export default function Home() {
         <div className="w-full max-w-screen-xl mx-auto px-5">
 
           <div 
-          data-aos="fade-up" data-aos-duration="500"
+          data-aos="fade-up" data-aos-delay="100" data-aos-duration="600"
           className="relative z-10 lg:px-0 text-white md:max-w-md flex flex-col gap-7">
             <h2 className="uppercase font-bold text-4xl text-secondary lg:text-[40px]"
             style={{lineHeight: "50px"}}
@@ -84,7 +83,8 @@ export default function Home() {
           <div 
           data-aos="fade-up"
           className="w-full h-full overflow-hidden rounded-md">
-            <Image src="/img/us.jpg" alt="" className="w-full h-[200px] md:h-[300px] object-bottom lg:h-full object-cover lg:object-left" />
+            <img 
+            src="/img/us.jpg" alt="" className="w-full h-[200px] md:h-[300px] object-bottom lg:h-full object-cover lg:object-left" />
           </div>
 
           <div className="lg:flex lg:flex-col lg:gap-6">
@@ -130,7 +130,7 @@ export default function Home() {
               data-aos-delay="200"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">
@@ -150,7 +150,7 @@ export default function Home() {
               data-aos-delay="300"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">
@@ -170,7 +170,7 @@ export default function Home() {
               data-aos-delay="400"
               className="card">
                 <div className="card-image h-[200px] lg:h-[350px] overflow-hidden rounded-lg mb-3 lg:mb-0">
-                  <Image src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
+                  <img src="/img/proyecto1.jpg" className="w-full h-full object-cover" alt="proyecto1" />
                 </div>
 
                 <div className="lg:px-6 lg:-mt-14 relative z-20">
